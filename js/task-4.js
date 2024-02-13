@@ -1,5 +1,5 @@
 const getTotalBalanceByGender = (users, gender) =>
-    users.filter(user => user.gender.includes(gender)).
+    users.filter(user => user.gender === gender).
         map(user => user.balance).
         reduce((sum, balance) => sum + balance);
     
